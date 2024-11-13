@@ -9,26 +9,86 @@
 </head>
 <body>
     <div class="container min-h-screen bg-center bg-cover bg-[url('/gambar/Background.png')]">
-        <nav class="flex items-center">
-            <img src="/gambar/SigMew.png" alt="">
-            <ul class="flex-1 items-center">
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Home</a></li>
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">About</a></li>
-                <li class="list-none inline-block px-5"><a href="#" class="no-underline text-white px-2">Our Products</a></li>
-                <li class="list-none inline-block px-5"><a href="# " class="no-underline text-white px-2">Contacts</a></li>
-            </ul>
-            <img src="/gambar/Shopping Logo.png" alt="">
+        
+        <nav class="bg-gray-900 border-gray-200 ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="/gambar/SigMew.png" class="h-8" alt="SigMew Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">SigMew</span>
+                </a>
+                <div class="flex items-center md:order-2 space-x-3">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.0/dist/flowbite.min.js"></script>
+                    <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="/gambar/Profile.png" alt="user photo">
+                    </button>
+                    <!-- Profile Dropdown -->
+                    <div class="z-50 hidden my-4 text-base list-none bg-gray-900 divide-y divide-gray-100 rounded-lg shadow" id="user-dropdown">
+                        <div class="px-4 py-3">
+                            <span class="block text-sm text-gray-900 dark:text-white">Ibnu Sina</span>
+                            <span class="block text-sm text-gray-500 truncate dark:text-gray-400">avicenna@flowbite.com</span>
+                        </div>
+                        <ul class="py-2" aria-labelledby="user-menu-button">
+                            <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Order List</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Settings</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Wishlist</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Sign out</a></li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" data-dropdown-toggle="language-dropdown-menu">
+                        <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
+                            <path fill="#b22234" d="M0 0h7410v3900H0z"/>
+                            <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300"/>
+                            <path fill="#3c3b6e" d="M0 0h2964v2100H0z"/>
+                            <g fill="#fff">
+                                <use xlink:href="#a"/>
+                            </g>
+                        </svg>
+                        English (US)
+                    </button>
+                    <!-- Language Dropdown -->
+                    <div class="z-50 hidden my-4 text-base list-none bg-gray-700 divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+                        <ul class="py-2 font-medium" role="none">
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">English (US)</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Indonesia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <div class="text-white mt-48 max-w-x1">
-            <h1 class="text-6xl font-semibold leading-normal">Buy Two,<br>
-            <span>Because One Just Isn’t Enough.</span></h1>
-            <p>Perfectly casual, effortlessly stylish – this tee is crafted with soft, breathable cotton that’s ideal for everyday wear. 
-                With a classic fit and a variety of colors, it's a versatile piece that goes with everything. 
-                Dress it up or keep it laid-back; however you style it, this shirt is sure to be a viral.
-            </p>
-        </div>
+        <nav class="bg-gray-700 dark:bg-gray-700">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto">
+                <div class="flex items-center justify-center">
+                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">WOMEN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">KIDS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">FURNITURE</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-900 dark:text-white hover:underline">BEAUTY</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </div>
+    
       <!-- Footer  -->
        <footer class="bg-white">
         <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-8">
@@ -40,12 +100,14 @@
 
             <div class="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
               <div class="col-span-2">
-                <div>
-                  <h2 class="text-2xl font-bold text-gray-900">Get The Latlest News!</h2>
-
-                  <p class="mt-4 text-gray-500">
-                    Stay Informed with LetNews
-Get the latest updates, breaking news, and stories that matter, all in one place. LetNews keeps you connected with what’s happening around the world, anytime, anywhere.
+                <div class="flex items-center space-x-9">
+                    <img src="/gambar/SigMew.png" class="h-16">
+                    <div>
+                    <h2 class="text-2xl font-bold text-gray-900">Get The Latest News!</h2>
+                    <p class="mt-4 text-gray-500">
+                        Stay Informed with LetNews
+                        Get the latest updates, breaking news, and stories that matter, all in one place. LetNews keeps you connected with what’s happening around the world, anytime, anywhere.
+                    </div>
                 </div>
               </div>
 
@@ -59,7 +121,7 @@ Get the latest updates, breaking news, and stories that matter, all in one place
                     <input
                       type="email"
                       id="UserEmail"
-                      placeholder="john@rhcp.com"
+                      placeholder="name@flowbite.com"
                       class="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
                     />
       
@@ -119,7 +181,7 @@ Get the latest updates, breaking news, and stories that matter, all in one place
 
               
               <div class="col-span-2 sm:col-span-1">
-                <p class="font-medium text-gray-900">Akses</p>
+                <p class="font-medium text-gray-900">Access</p>
 
                 <ul class="mt-6 space-y-4 text-sm">
                   <li>
