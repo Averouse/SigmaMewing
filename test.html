@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/sumber/output.css">
+    <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body>
+
+    <!-- NavBar -->
+    <nav class="bg-gray-900 border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/gambar/SigMew.png" class="h-8" alt="SigMew Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+
+            <!-- Search Bar -->
+            <form class="max-w-sm mx-auto">
+                <label for="default-search" class="mb-1 text-xs font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search" class="block w-full p-2 pl-8 pr-16 text-xs text-gray-900 border border-gray-300 rounded-md bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..." required />
+                    <button type="submit" id="search-button" class="absolute right-1 top-1/2 -translate-y-1/2 bg-gray-900 text-white hover:bg-gray-200 focus:ring-2 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs px-3 py-1 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Go
+                    </button>
+                </div>
+            </form>
+
+            <div class="flex items-center md:order-2 space-x-3">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css">
+                <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.0/dist/flowbite.min.js"></script>
+                <button type="button" class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="w-8 h-8 rounded-full" src="/gambar/Profile.png" alt="user photo">
+                </button>
+
+                <!-- Profile Dropdown -->
+                <div class="z-50 hidden my-4 text-base list-none bg-gray-900 divide-y divide-gray-100 rounded-lg shadow" id="user-dropdown">
+                    <div class="px-4 py-3">
+                        <span class="block text-sm text-gray-900 dark:text-white">Ibnu Sina</span>
+                        <span class="block text-sm text-gray-500 truncate dark:text-gray-400">avicenna@flowbite.com</span>
+                    </div>
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Order List</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Settings</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Wishlist</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600">Sign out</a></li>
+                    </ul>
+                </div>
+
+                <!-- Language Dropdown -->
+                <button type="button" class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-white dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white" data-dropdown-toggle="language-dropdown-menu">
+                    <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3900 3900">
+                        <path fill="#b22234" d="M0 0h7410v3900H0z"/>
+                        <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff" stroke-width="300" />
+                        <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
+                        <g fill="#fff">
+                            <use xlink:href="#a" />
+                        </g>
+                    </svg>
+                    English (US)
+                </button>
+                <div class="z-50 hidden my-4 text-base list-none bg-gray-700 divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700" id="language-dropdown-menu">
+                    <ul class="py-2 font-medium" role="none">
+                        <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">English (US)</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-sm text-white hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Indonesia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub-nav -->
+    <nav class="bg-gray-700 dark:bg-gray-700">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto">
+            <div class="flex items-center justify-center">
+                <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                    <li><a href="men.html" class="text-white-900 dark:text-white hover:underline">Men</a></li>
+                    <li><a href="Hodie&Sweater.html" class="text-white-900 dark:text-white hover:underline">Hoodie & Sweatshirt</a></li>
+                    <li><a href="pants.html" class="text-white-900 dark:text-white hover:underline">Pants</a></li>
+                    <li><a href="aksesoris.html" class="text-wite-900 dark:text-white hover:underline">Accessories</a></li>
+                    <li><a href="shirt.html" class="text-white-900 dark:text-white hover:underline">Shirt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
+        <div class="flex justify-between items-center border-b pb-6 mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Ringkasan Pembayaran</h2>
+            <div>
+                <p class="text-sm text-gray-500">Jumlah Item: 3</p>
+                <p class="text-lg font-semibold text-gray-900">Rp. 450.000</p>
+            </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4">Detail Pesanan</h3>
+            <ul>
+                <li class="flex justify-between py-2 border-b">
+                    <span class="text-gray-700">Produk 1</span>
+                    <span class="text-gray-900">Rp. 150.000</span>
+                </li>
+                <li class="flex justify-between py-2 border-b">
+                    <span class="text-gray-700">Produk 2</span>
+                    <span class="text-gray-900">Rp. 200.000</span>
+                </li>
+                <li class="
