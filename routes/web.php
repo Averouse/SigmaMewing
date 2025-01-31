@@ -24,6 +24,10 @@ Route::get('/', function () {
     return view('homepage'); // Pastikan file view dashboard.blade.php ada di folder resources/views
 });
 
+Route::get('/homepage', function () {
+    return view('homepage'); // Pastikan file view dashboard.blade.php ada di folder resources/views
+});
+
 Route::get('/men', function () {
     return view('men'); // Pastikan file view dashboard.blade.php ada di folder resources/views
 });
@@ -44,8 +48,8 @@ Route::get('/baju', function () {
     return view('baju'); // Pastikan file view dashboard.blade.php ada di folder resources/views
 });
 
-Route::get('/baju', function () {
-    return view('baju'); // Pastikan file view dashboard.blade.php ada di folder resources/views
+Route::get('/checkout', function () {
+    return view('checkout'); // Pastikan file view dashboard.blade.php ada di folder resources/views
 });
 
 Route::get('/pembayaran', function () {

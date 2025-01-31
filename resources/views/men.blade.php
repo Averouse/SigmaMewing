@@ -82,7 +82,7 @@
     <!--Produk-->
     <div class="grid gap-4 mb-4">
         <!-- Large Image Section -->
-        <a href="halmanCheckout.html">
+        <a href="{{ url('checkout') }}">
             <div class="w-full flex justify-center">
                 <img
                     class="h-auto w-full max-w-3xl rounded-lg"
