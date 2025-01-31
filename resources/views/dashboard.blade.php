@@ -93,6 +93,10 @@
                             <label for="deskripsi" class="form-label">Deskripsi</label>
                             <textarea name="deskripsi" id="deskripsi" rows="3" class="form-control" placeholder="Masukkan deskripsi barang" required></textarea>
                         </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">kelas</label>
+                            <textarea name="" id="" rows="3" class="form-control" placeholder="Masukkan deskripsi barang" required></textarea>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
@@ -138,12 +142,12 @@
                     </div>
 
                     <form method="POST" action="{{ route('logout') }}">
-            @csrf
-            <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
-                Logout
-            </button>
-       
-                </form>
+                        @csrf
+                        <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
+                            Logout
+                        </button>
+
+                    </form>
             </div>
         </div>
     </div>

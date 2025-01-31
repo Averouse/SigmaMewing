@@ -14,7 +14,7 @@ class BarangController extends Controller
         return view('dashboard', compact('barangs'));
     }
 
- 
+
 
     public function store(Request $request)
     {
