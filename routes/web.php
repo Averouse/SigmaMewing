@@ -44,6 +44,13 @@ Route::get('/baju', function () {
     return view('baju'); // Pastikan file view dashboard.blade.php ada di folder resources/views
 });
 
+Route::get('/baju', function () {
+    return view('baju'); // Pastikan file view dashboard.blade.php ada di folder resources/views
+});
+
+Route::get('/pembayaran', function () {
+    return view('pembayaran'); // Pastikan file view dashboard.blade.php ada di folder resources/views
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
